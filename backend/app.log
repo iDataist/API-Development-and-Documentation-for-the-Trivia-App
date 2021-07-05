@@ -98,3 +98,22 @@ WHERE questions.category = %(category_1)s AND (questions.id NOT IN (%(id_1_1)s))
 [parameters: {'category_1': 1, 'param_1': 1, 'id_1_1': 'Question 2'}]
 (Background on this error at: http://sqlalche.me/e/14/9h9h)
 ERROR:flaskr:404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:19:24] "GET /questions?page=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:19:25] "GET /categories/1/questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:19:26] "GET /categories/3/questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:19:28] "GET /questions?page=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:19:29] "GET /categories HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:19:35] "POST /questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:19:59] "GET /categories HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:00] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:05] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:08] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:11] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:13] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:15] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:22] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:26] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:30] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:34] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:47] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:20:52] "POST /quizzes HTTP/1.1" 200 -
