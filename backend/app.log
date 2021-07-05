@@ -1,0 +1,7 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:38:50] "GET /categories/4/questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:39:52] "GET /questions?page=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:39:54] "GET /categories HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:39:55] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:39:56] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:39:58] "POST /quizzes HTTP/1.1" 200 -
