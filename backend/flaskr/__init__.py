@@ -150,10 +150,9 @@ def create_app(test_config=None):
             else:
                 question = Question.query.order_by(func.random()).filter(Question.category==quiz_category['id'], \
                                                    Question.id.notin_(previous_questions)).first()
-
             return jsonify({
             'success': True,
-            'questions': question.format()
+            'question': question.format()
             })
         except Exception as e:
             app.logger.error(e)
