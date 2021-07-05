@@ -143,14 +143,13 @@ def create_app(test_config=None):
         quiz_category = body.get('quiz_category', None)
         if (previous_questions is None) or (quiz_category is None):
             abort(404)
-        previous_questions_id_list = [question['id'] for question in previous_questions]
         category_id = int(quiz_category['id'])
         try:
             if category_id == 0:
-                question = Question.query.order_by(func.random()).filter(Question.id.notin_(previous_questions_id_list)).first()
+                question = Question.query.order_by(func.random()).filter(Question.id.notin_(previous_questions)).first()
             else:
                 question = Question.query.order_by(func.random()).filter(Question.category==quiz_category['id'], \
-                                                   Question.id.notin_(previous_questions_id_list)).first()
+                                                   Question.id.notin_(previous_questions)).first()
 
             return jsonify({
             'success': True,
