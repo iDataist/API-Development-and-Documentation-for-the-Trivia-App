@@ -109,10 +109,10 @@ def create_app(test_config=None):
                 if len(questions) == 0:
                     abort(404)
                 return jsonify({
-                'success': True,
-                'questions': paginate_questions(questions),
-                'total_questions': len(questions)
-                })
+                                'success': True,
+                                'questions': paginate_questions(questions),
+                                'total_questions': len(questions)
+                                })
             else:
                 new_question = body.get('question', None)
                 new_answer = body.get('answer', None)
