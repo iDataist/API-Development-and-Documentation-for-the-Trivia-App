@@ -5,3 +5,96 @@ INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:39:54] "GET /categories HTTP/1.1" 20
 INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:39:55] "POST /quizzes HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:39:56] "POST /quizzes HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:39:58] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:47:11] "GET /questions?page=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:47:16] "POST /questions HTTP/1.1" 200 -
+ERROR:flaskr:404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:48:33] "[31m[1mPOST /questions HTTP/1.1[0m" 422 -
+ERROR:flaskr:404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:49:57] "[31m[1mPOST /questions HTTP/1.1[0m" 422 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:50:40] "POST /questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:50:56] "GET /questions?page=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:51:00] "POST /questions HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:51:03] "POST /questions HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/huiren/Downloads/trivia_api/backend/flaskr/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:51:31] "GET /categories HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:51:31] "POST /quizzes HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:51:34] "GET /questions?page=1 HTTP/1.1" 200 -
+ERROR:flaskr:404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 17:51:36] "[31m[1mPOST /questions HTTP/1.1[0m" 422 -
+INFO:werkzeug: * Detected change in '/Users/huiren/Downloads/trivia_api/backend/test_flaskr.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/Users/huiren/Downloads/trivia_api/backend/test_flaskr.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/Users/huiren/Downloads/trivia_api/backend/test_flaskr.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/Users/huiren/Downloads/trivia_api/backend/test_flaskr.py', reloading
+INFO:werkzeug: * Restarting with stat
+ERROR:flaskr:(psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "Question 2"
+LINE 3: ... questions.category = 1 AND (questions.id NOT IN ('Question ...
+                                                             ^
+
+[SQL: SELECT questions.id AS questions_id, questions.question AS questions_question, questions.answer AS questions_answer, questions.category AS questions_category, questions.difficulty AS questions_difficulty 
+FROM questions 
+WHERE questions.category = %(category_1)s AND (questions.id NOT IN (%(id_1_1)s)) ORDER BY random() 
+ LIMIT %(param_1)s]
+[parameters: {'category_1': 1, 'param_1': 1, 'id_1_1': 'Question 2'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+ERROR:flaskr:404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+ERROR:flaskr:404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 18:12:43] "POST /questions HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/huiren/Downloads/trivia_api/backend/test_flaskr.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/Users/huiren/Downloads/trivia_api/backend/test_flaskr.py', reloading
+INFO:werkzeug: * Restarting with stat
+ERROR:flaskr:(psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "Question 2"
+LINE 3: ... questions.category = 1 AND (questions.id NOT IN ('Question ...
+                                                             ^
+
+[SQL: SELECT questions.id AS questions_id, questions.question AS questions_question, questions.answer AS questions_answer, questions.category AS questions_category, questions.difficulty AS questions_difficulty 
+FROM questions 
+WHERE questions.category = %(category_1)s AND (questions.id NOT IN (%(id_1_1)s)) ORDER BY random() 
+ LIMIT %(param_1)s]
+[parameters: {'category_1': 1, 'param_1': 1, 'id_1_1': 'Question 2'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+ERROR:flaskr:404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug: * Detected change in '/Users/huiren/Downloads/trivia_api/backend/test_flaskr.py', reloading
+INFO:werkzeug: * Restarting with stat
+ERROR:flaskr:(psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "Question 2"
+LINE 3: ...questions.category = 10 AND (questions.id NOT IN ('Question ...
+                                                             ^
+
+[SQL: SELECT questions.id AS questions_id, questions.question AS questions_question, questions.answer AS questions_answer, questions.category AS questions_category, questions.difficulty AS questions_difficulty 
+FROM questions 
+WHERE questions.category = %(category_1)s AND (questions.id NOT IN (%(id_1_1)s)) ORDER BY random() 
+ LIMIT %(param_1)s]
+[parameters: {'category_1': 10, 'param_1': 1, 'id_1_1': 'Question 2'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+ERROR:flaskr:(psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "Question 2"
+LINE 3: ... questions.category = 1 AND (questions.id NOT IN ('Question ...
+                                                             ^
+
+[SQL: SELECT questions.id AS questions_id, questions.question AS questions_question, questions.answer AS questions_answer, questions.category AS questions_category, questions.difficulty AS questions_difficulty 
+FROM questions 
+WHERE questions.category = %(category_1)s AND (questions.id NOT IN (%(id_1_1)s)) ORDER BY random() 
+ LIMIT %(param_1)s]
+[parameters: {'category_1': 1, 'param_1': 1, 'id_1_1': 'Question 2'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+ERROR:flaskr:404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug: * Detected change in '/Users/huiren/Downloads/trivia_api/backend/test_flaskr.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/Users/huiren/Downloads/trivia_api/backend/test_flaskr.py', reloading
+INFO:werkzeug: * Restarting with stat
+ERROR:flaskr:(psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type integer: "Question 2"
+LINE 3: ... questions.category = 1 AND (questions.id NOT IN ('Question ...
+                                                             ^
+
+[SQL: SELECT questions.id AS questions_id, questions.question AS questions_question, questions.answer AS questions_answer, questions.category AS questions_category, questions.difficulty AS questions_difficulty 
+FROM questions 
+WHERE questions.category = %(category_1)s AND (questions.id NOT IN (%(id_1_1)s)) ORDER BY random() 
+ LIMIT %(param_1)s]
+[parameters: {'category_1': 1, 'param_1': 1, 'id_1_1': 'Question 2'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+ERROR:flaskr:404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
