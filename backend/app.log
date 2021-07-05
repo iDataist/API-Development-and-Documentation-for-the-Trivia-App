@@ -4,3 +4,4 @@ INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:18:49] "GET /categories HTTP/1.1" 20
 INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:18:50] "POST /quizzes HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:18:58] "POST /quizzes HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [05/Jul/2021 16:21:52] "GET /categories HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/huiren/Downloads/trivia_api/backend/flaskr/__init__.py', reloading
