@@ -11,7 +11,6 @@ I implemented, tested and documented the APIs for the trivia app with the follow
 5. Play the quiz game, randomizing either all questions or within a specific category.
 
 ## Tech Stack (Dependencies)
-
 ### Backend
 The [./backend](https://github.com/iDataist/trivia_api/tree/main/backend) directory contains a Flask and SQLAlchemy server with the following dependencies. 
 1. **Python 3.7** - Follow instructions to install the latest version of python for your platform in the [python docs](https://docs.python.org/3/using/unix.html#getting-and-installing-the-latest-version-of-python).
@@ -24,9 +23,7 @@ The [./backend](https://github.com/iDataist/trivia_api/tree/main/backend) direct
  - [Flask](http://flask.pocoo.org/)  is a lightweight backend microservices framework. Flask is required to handle requests and responses.
  - [SQLAlchemy](https://www.sqlalchemy.org/) is the Python SQL toolkit and ORM we'll use handle the lightweight sqlite database. 
  - [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/#) is the extension we'll use to handle cross origin requests from our frontend server. 
-
 ### Frontend
-
 The [./frontend](hhttps://github.com/iDataist/trivia_api/tree/main/frontend) directory contains a React frontend to consume the data from the Flask server with the following dependencies.
 1. **Node and NPM**<br>
 This project depends on Nodejs and Node Package Manager (NPM). Before continuing, you must download and install Node (the download includes NPM) from [https://nodejs.com/en/download](https://nodejs.org/en/download/).
@@ -53,6 +50,20 @@ Frontend:
 cd frontend
 npm start
 ```
+Test:
+```
+cd backend
+python 
+```
+
+![](screenshots/1.png)
+![](screenshots/2.png)
+![](screenshots/3.png)
+![](screenshots/4.png)
+![](screenshots/5.png)
+![](screenshots/6.png)
+![](screenshots/7.png)
+
 ## Endpoints
 ```js
 GET '/categories'
